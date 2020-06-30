@@ -1,6 +1,6 @@
 module.exports = {
     title: 'ince4的前端笔记',
-	description: '记录、整理学习过程中的知识点',
+	description: '前端学习过程中积累、整理的个人笔记',
 	themeConfig:{
 		logo: '/animal_chara_computer_azarashi.png',
 		nav: [
@@ -15,7 +15,7 @@ module.exports = {
 				collapsable: true,
 				children: [
 				  '/base/JS基础/数据类型',
-				  '/base/JS基础/js02',
+				  '/base/JS基础/闭包',
 				]
 			}
 			
