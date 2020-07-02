@@ -16,6 +16,7 @@ module.exports = {
 				children: [
 				  '/base/JS基础/数据类型',
 				  '/base/JS基础/闭包',
+				  '/base/JS基础/原型链',
 				]
 			}
 			
