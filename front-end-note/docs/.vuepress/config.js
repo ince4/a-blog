@@ -17,6 +17,10 @@ module.exports = {
 				  '/base/JS基础/数据类型',
 				  '/base/JS基础/闭包',
 				  '/base/JS基础/原型链',
+				  '/base/JS基础/this关键字',
+				  '/base/JS基础/异步编程',
+				  '/base/JS基础/事件循环',
+				  '/base/JS基础/部分api原理',
 				]
 			}
 			
