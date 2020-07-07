@@ -15,12 +15,26 @@ module.exports = {
 				collapsable: true,
 				children: [
 				  '/base/JS基础/数据类型',
+				  '/base/JS基础/执行上下文和执行栈',
 				  '/base/JS基础/闭包',
 				  '/base/JS基础/原型链',
-				  '/base/JS基础/this关键字',
-				  '/base/JS基础/异步编程',
-				  '/base/JS基础/事件循环',
-				  '/base/JS基础/部分api原理',
+				  '/base/JS基础/异步编程'
+				]
+			},
+			{
+				title: 'JS实践',
+				collapsable: true,
+				children: [
+				  '/base/JS实践/深浅拷贝',
+				  '/base/JS实践/防抖、节流',
+				  '/base/JS实践/Promise',
+				]
+			},
+			{
+				title: '浏览器知识',
+				collapsable: true,
+				children: [
+				  '/base/浏览器知识/事件循环',
 				]
 			}
 			
