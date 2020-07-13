@@ -27,20 +27,32 @@ module.exports = {
 				children: [
 				  '/base/JS实践/深浅拷贝',
 				  '/base/JS实践/防抖、节流',
-				  '/base/JS实践/Promise',
+				  '/base/JS实践/Promise简易实现',
+				  '/base/JS实践/观察者模式'
 				]
 			},
 			{
-				title: '浏览器知识',
+				title: '浏览器',
 				collapsable: true,
 				children: [
-				  '/base/浏览器知识/事件循环',
+				  '/base/浏览器/事件循环',
+				  '/base/浏览器/跨域',
+				  '/base/浏览器/浏览器缓存',
+				  '/base/浏览器/浏览器渲染',
+				]
+			},
+			{
+				title: 'HTTP协议',
+				collapsable: true,
+				children: [
+				  '/base/HTTP协议/TCP协议',
+				  '/base/HTTP协议/HTTP基础'
 				]
 			}
 			
 		],
-		// head: [
-		// 	['link', { rel: 'icon', href: '/animal_chara_computer_azarashi.png' }],
-		// ],
+		head: [
+			['link', { rel: 'icon', href: '/favicon.ico' }],
+		],
 	}
 }
