@@ -23,17 +23,17 @@ HTTP/1.1 200 OK
 http版本 + 状态码 + 状态码描述
 
 ## 2、URL结构
-![Image text](/HTTP协议/URL结构.png)
+![Image text](/网络基础/URL结构.png)
 
 
 ## 3、常见头部
 ### 常见请求头
 
-![Image text](/HTTP协议/请求头.webp)
+![Image text](/网络基础/请求头.webp)
 
 ### 常见响应头
 
-![Image text](/HTTP协议/响应头.webp)
+![Image text](/网络基础/响应头.webp)
 
 ## 4、HTTP状态码
 - 1xx: 表示目前是协议处理的中间状态，还需要后续操作。
@@ -44,7 +44,7 @@ http版本 + 状态码 + 状态码描述
 
 <details>
   <summary></summary>
-  <img src="/HTTP协议/状态码.jpg">
+  <img src="/网络基础/状态码.jpg">
 </details>
 
 ### 1xx

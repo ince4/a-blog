@@ -42,16 +42,23 @@ module.exports = {
 				]
 			},
 			{
-				title: 'HTTP协议',
+				title: '网络基础',
 				collapsable: true,
 				children: [
-				  '/base/HTTP协议/TCP协议',
-				  '/base/HTTP协议/HTTP基础',
-				  '/base/HTTP协议/HTTPS',
-				  '/base/HTTP协议/XSS攻击',
-				  '/base/HTTP协议/CSRF攻击',
+				  '/base/网络基础/TCP协议',
+				  '/base/网络基础/HTTP基础',
+				  '/base/网络基础/HTTPS',
+				  '/base/网络基础/XSS攻击',
+				  '/base/网络基础/CSRF攻击',
 				]
-			}
+			},
+			{
+				title: '其他',
+				collapsable: true,
+				children: [
+				  '/base/其他/全局执行上下文出栈时机'
+				]
+			},
 			
 		],
 		head: [
