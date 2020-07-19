@@ -14,49 +14,62 @@ module.exports = {
 				title: 'JS基础',
 				collapsable: true,
 				children: [
-				  '/base/JS基础/数据类型',
-				  '/base/JS基础/执行上下文和执行栈',
-				  '/base/JS基础/闭包',
-				  '/base/JS基础/原型链',
-				  '/base/JS基础/异步编程'
+					'/base/JS基础/数据类型',
+					'/base/JS基础/执行上下文和执行栈',
+					'/base/JS基础/闭包',
+					'/base/JS基础/原型链',
+					'/base/JS基础/异步编程'
 				]
 			},
 			{
 				title: 'JS实践',
 				collapsable: true,
 				children: [
-				  '/base/JS实践/深浅拷贝',
-				  '/base/JS实践/防抖、节流',
-				  '/base/JS实践/Promise简易实现',
-				  '/base/JS实践/观察者模式'
+					'/base/JS实践/深浅拷贝',
+					'/base/JS实践/防抖、节流',
+					'/base/JS实践/Promise简易实现',
+					'/base/JS实践/图片懒加载',
+					'/base/JS实践/单例模式',
+					'/base/JS实践/观察者模式'
 				]
 			},
 			{
 				title: '浏览器',
 				collapsable: true,
 				children: [
-					'/base/浏览器/跨域',
-				  '/base/浏览器/事件循环',
-				  '/base/浏览器/浏览器渲染',
-				  '/base/浏览器/浏览器缓存',
+				'/base/浏览器/跨域',
+				'/base/浏览器/事件循环',
+				'/base/浏览器/浏览器渲染',
+				'/base/浏览器/浏览器缓存',
 				]
 			},
 			{
 				title: '网络基础',
 				collapsable: true,
 				children: [
-				  '/base/网络基础/TCP协议',
-				  '/base/网络基础/HTTP基础',
-				  '/base/网络基础/HTTPS',
-				  '/base/网络基础/XSS攻击',
-				  '/base/网络基础/CSRF攻击',
+					'/base/网络基础/TCP协议',
+					'/base/网络基础/HTTP基础',
+					'/base/网络基础/HTTPS',
+					'/base/网络基础/XSS攻击',
+					'/base/网络基础/CSRF攻击',
+				]
+			},
+			{
+				title: 'Vue原理',
+				collapsable: true,
+				children: [
+				  '/base/Vue原理/全局概览',
+				  '/base/Vue原理/响应式系统',
+				  '/base/Vue原理/响应式系统-依赖收集.md',
+				  '/base/Vue原理/Virtual DOM',
 				]
 			},
 			{
 				title: '其他',
 				collapsable: true,
 				children: [
-				  '/base/其他/全局执行上下文出栈时机'
+				  '/base/其他/全局执行上下文出栈时机',
+				  '/base/其他/Fetch与XMLHttpRequest',
 				]
 			},
 			

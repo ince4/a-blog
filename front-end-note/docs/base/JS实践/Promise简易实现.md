@@ -1,6 +1,5 @@
 # Promise简易实现
 
-> **promise/A+规范内容**
 >- 一个 promise 实例的当前状态只能是 pending、fulfilled 和 rejected 三种之一。状态改变只能是 pending 到fulfilled或者 pending 到 rejected。状态改变不可逆。  
 >- promise 的 then 方法接收两个可选参数，表示 promise 状态改变时的回调 promise.then(onFulfilled, onRejected)。then 方法返回一个 promise，then 方法可被同一个 promise 调用多次。
 
