@@ -9,7 +9,7 @@ module.exports = {
 			{ text: 'External', link: 'https://google.com' },
 		],
 		sidebar: [
-			['/base/', 'about'],
+			['/base/', 'About'],
 			{
 				title: 'JS基础',
 				collapsable: true,
@@ -60,8 +60,8 @@ module.exports = {
 				children: [
 				  '/base/Vue原理/全局概览',
 				  '/base/Vue原理/响应式系统',
-				  '/base/Vue原理/响应式系统-依赖收集.md',
 				  '/base/Vue原理/Virtual DOM',
+				  '/base/Vue原理/模版编译',
 				]
 			},
 			{
