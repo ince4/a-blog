@@ -11,6 +11,13 @@ module.exports = {
 		sidebar: [
 			['/base/', 'About'],
 			{
+				title: 'HTML+CSS',
+				collapsable: true,
+				children: [
+					'/base/HTML+CSS/CSS基础'
+				]
+			},
+			{
 				title: 'JS基础',
 				collapsable: true,
 				children: [
@@ -58,10 +65,11 @@ module.exports = {
 				title: 'Vue原理',
 				collapsable: true,
 				children: [
-				  '/base/Vue原理/全局概览',
-				  '/base/Vue原理/响应式系统',
-				  '/base/Vue原理/Virtual DOM',
-				  '/base/Vue原理/模版编译',
+					'/base/Vue原理/Vue基础',
+					'/base/Vue原理/响应式系统',
+					'/base/Vue原理/Virtual DOM',
+					'/base/Vue原理/EventBus',
+					'/base/Vue原理/Vue3.0新特性'
 				]
 			},
 			{
