@@ -1,8 +1,8 @@
 module.exports = {
-    title: 'ince4的前端笔记',
-	description: '记录、整理学习过程中的知识点',
+    title: 'ince4の日本語メモ',
+	description: 'ポケモンマスターを目指せ（',
 	themeConfig:{
-		logo: '/animal_chara_computer_azarashi.png',
+		logo: '/sabaku_hone.png',
 		nav: [
 			{ text: '主页', link: '/' },
 			{ text: '基础', link: '/base/' },
@@ -10,14 +10,14 @@ module.exports = {
 		],
 		sidebar: [
 			{
-				title: 'JS基础',
+				title: '単語',
 				collapsable: true,
 				children: [
-				  '/base/JS基础/数据类型',
-				  '/base/JS基础/js02',
+				  '/base/単語/動詞の形',
+				  '/base/単語/数字'
 				]
-			}
-			
+			},
+			['/base/敬語', '敬語']
 		],
 		// head: [
 		// 	['link', { rel: 'icon', href: '/animal_chara_computer_azarashi.png' }],
