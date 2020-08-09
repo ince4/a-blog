@@ -17,7 +17,14 @@ module.exports = {
 				  '/base/単語/数字'
 				]
 			},
-			['/base/敬語', '敬語']
+			['/base/敬語', '敬語'],
+			{
+				title: 'N2ミスノート',
+				collapsable: true,
+				children: [
+				  '/base/N2ミスノート/語彙・文法'
+				]
+			},
 		],
 		// head: [
 		// 	['link', { rel: 'icon', href: '/animal_chara_computer_azarashi.png' }],
