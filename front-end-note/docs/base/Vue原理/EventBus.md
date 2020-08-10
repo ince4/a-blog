@@ -46,8 +46,8 @@ class EventEmitter {
 				callback(...args)
 			})
 		}
+	}
 		
-
 	// 移除某个事件回调队列里的指定回调函数
 	off(eventName, cb) {
 		const callbacks = this.handlers[eventName]

@@ -69,6 +69,7 @@ module.exports = {
 					'/base/Vue原理/响应式系统',
 					'/base/Vue原理/Virtual DOM',
 					'/base/Vue原理/EventBus',
+					'/base/Vue原理/异步更新',
 					'/base/Vue原理/Vue3.0'
 				]
 			},
