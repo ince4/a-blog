@@ -129,7 +129,7 @@ export default {
 ## 3、响应式
 Vue2.0 的响应式系统是基于 Object.defineProperty 实现的代理，能够监听数据对象的变化，但是监听不到对象属性的增删、数组元素和长度的变化。同时会在 Vue 实例初始化的时候把所有的 Observer 都建立好并进行深度监听，才能观察到数据对象属性的变化。
 
-Vue3.0 采用了 ES6 的 Proxy 来代替 Object.defineProperty，性能更好，可以做到监听对象属性的增删和数组元素和长度的修改，还可以监听 Map、Set、WeakSet、WeakMap 等数据结构。同时还实现了惰性的监听，不会在初始化的时候创建所有的 Observer，而是会在用到的时候才去监听。
+Vue3.0 采用了 ES6 的 Proxy 来代替 Object.defineProperty，性能更好，可以做到监听对象属性的增删和数组元素和长度的修改，还可以监听 Map、Set、WeakSet、WeakMap 等数据结构。同时还实现了惰性的监听，不会在初始化的时候创建所有的 Observer，而是会在用到的时候才去监听（触发 getter）。
 
 ```javascript
 function reactive (target = {}) {
