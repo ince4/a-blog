@@ -1,16 +1,18 @@
 module.exports = {
     title: 'ronn的前端笔记',
 	description: '前端学习过程中积累、整理的个人笔记',
+	base: '/blog/front-end-note/',
 	themeConfig:{
 		logo: '/animal_chara_computer_azarashi.png',
 		nav: [
 			{ text: '主页', link: '/' },
-			{ text: '基础', link: '/base/' },
-			{ text: 'External', link: 'https://google.com' },
+			{ text: '基础', link: '/base/JS基础/数据类型' },
+			{ text: '实习日记', link: '/logs/' },
+			{ text: 'External', link: 'http://www.ronn.top/blog/nihonngo/' },
 		],
 		sidebar: {
 			'/base/': [
-				// ['', 'About'],
+				// ['', 'JS基础/数据类型'],
 				// {
 				// 	title: 'HTML+CSS',
 				// 	collapsable: true,
@@ -63,6 +65,7 @@ module.exports = {
 					]
 				},
 				{
+					
 					title: 'Vue原理',
 					collapsable: true,
 					children: [
@@ -78,9 +81,8 @@ module.exports = {
 					title: '其他',
 					collapsable: true,
 					children: [
-						'其他/全局执行上下文出栈时机',
-						'其他/Fetch与XMLHttpRequest',
-						// '其他/Webpack基础',
+						'其他/Webpack基础',
+						'其他/TypeScript基础',
 					]
 				},
 				// {
@@ -92,8 +94,13 @@ module.exports = {
 				// 	]
 				// },
 			],
-			// '/logs/': [
-			// ]
+			'/logs/': [
+				['', 'About'],
+				['Echarts相关', 'Echarts相关'],
+				['全局执行上下文出栈时机', '全局执行上下文出栈时机'],
+				['Fetch与XMLHttpRequest', 'Fetch与XMLHttpRequest'],
+				['CSS-BEM命名规范', 'CSS-BEM命名规范'],
+			]
 		},
 		head: [
 			['link', { rel: 'icon', href: '/favicon.ico' }],

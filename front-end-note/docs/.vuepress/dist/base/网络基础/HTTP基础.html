@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTTP基础 | ronn的前端笔记</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="前端学习过程中积累、整理的个人笔记">
+    <link rel="preload" href="/blog/front-end-note/assets/css/0.styles.c1b4df88.css" as="style"><link rel="preload" href="/blog/front-end-note/assets/js/app.ded6d208.js" as="script"><link rel="preload" href="/blog/front-end-note/assets/js/2.3d6dae29.js" as="script"><link rel="preload" href="/blog/front-end-note/assets/js/34.1df9b947.js" as="script"><link rel="prefetch" href="/blog/front-end-note/assets/js/10.33ddd461.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/11.e63c9ce5.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/12.fc1c6a9b.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/13.a62f487e.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/14.14eaf35e.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/15.e7af8a0f.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/16.dcb848eb.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/17.0df03ea7.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/18.ae5bc1d7.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/19.b4cee62c.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/20.bcf2f2a3.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/21.06756e15.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/22.fd507e67.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/23.da9ff8fe.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/24.3dbbcc86.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/25.e4425fcb.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/26.a53462ca.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/27.6557d258.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/28.17629f0d.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/29.73ca5261.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/3.b1303eae.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/30.8406d20c.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/31.ebd5b3e7.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/32.1e5df849.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/33.d6727097.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/35.52d7b42f.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/36.abb4984e.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/37.fb553397.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/38.04528ddd.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/39.a91a0078.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/4.ec929331.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/40.78378939.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/41.8fd72062.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/5.fc925f29.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/6.f432fbb9.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/7.617ed72a.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/8.ab260469.js"><link rel="prefetch" href="/blog/front-end-note/assets/js/9.daf803ff.js">
+    <link rel="stylesheet" href="/blog/front-end-note/assets/css/0.styles.c1b4df88.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/front-end-note/" class="home-link router-link-active"><img src="/blog/front-end-note/animal_chara_computer_azarashi.png" alt="ronn的前端笔记" class="logo"> <span class="site-name can-hide">ronn的前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/front-end-note/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/front-end-note/base/JS基础/数据类型.html" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/blog/front-end-note/logs/" class="nav-link">
+  实习日记
+</a></div><div class="nav-item"><a href="http://www.ronn.top/blog/nihonngo/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/front-end-note/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/front-end-note/base/JS基础/数据类型.html" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/blog/front-end-note/logs/" class="nav-link">
+  实习日记
+</a></div><div class="nav-item"><a href="http://www.ronn.top/blog/nihonngo/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS实践</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网络基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/front-end-note/base/网络基础/TCP协议.html" class="sidebar-link">TCP协议</a></li><li><a href="/blog/front-end-note/base/网络基础/HTTP基础.html" class="active sidebar-link">HTTP基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/front-end-note/base/网络基础/HTTP基础.html#_1、报文结构" class="sidebar-link">1、报文结构</a></li><li class="sidebar-sub-header"><a href="/blog/front-end-note/base/网络基础/HTTP基础.html#_2、url结构" class="sidebar-link">2、URL结构</a></li><li class="sidebar-sub-header"><a href="/blog/front-end-note/base/网络基础/HTTP基础.html#_3、常见头部" class="sidebar-link">3、常见头部</a></li></ul></li><li><a href="/blog/front-end-note/base/网络基础/HTTPS.html" class="sidebar-link">HTTPS</a></li><li><a href="/blog/front-end-note/base/网络基础/XSS攻击.html" class="sidebar-link">XSS攻击</a></li><li><a href="/blog/front-end-note/base/网络基础/CSRF攻击.html" class="sidebar-link">CSRF攻击</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http基础"><a href="#http基础" class="header-anchor">#</a> HTTP基础</h1> <p>HTTP(Hyper Text Transfer Protocol)是一个简单的请求-响应协议，它通常运行在 TCP 之上。它指定了客户端可能发送给服务器什么样的消息以及得到什么样的响应。</p> <h2 id="_1、报文结构"><a href="#_1、报文结构" class="header-anchor">#</a> 1、报文结构</h2> <p>HTTP 报文基本结构为</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>起始行 <span class="token operator">+</span> 头部 <span class="token operator">+</span> 空行 <span class="token operator">+</span> 实体
+</code></pre></div><h3 id="起始行"><a href="#起始行" class="header-anchor">#</a> 起始行</h3> <h4 id="请求报文"><a href="#请求报文" class="header-anchor">#</a> 请求报文</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token constant">GET</span> <span class="token operator">/</span>home <span class="token constant">HTTP</span><span class="token operator">/</span><span class="token number">1.1</span>
+</code></pre></div><p>方法 + 路径 + http版本</p> <h4 id="响应报文"><a href="#响应报文" class="header-anchor">#</a> 响应报文</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token constant">HTTP</span><span class="token operator">/</span><span class="token number">1.1</span> <span class="token number">200</span> <span class="token constant">OK</span>
+</code></pre></div><p>http版本 + 状态码 + 状态码描述</p> <h2 id="_2、url结构"><a href="#_2、url结构" class="header-anchor">#</a> 2、URL结构</h2> <img src="/blog/front-end-note/网络基础/URL结构.png"> <h2 id="_3、常见头部"><a href="#_3、常见头部" class="header-anchor">#</a> 3、常见头部</h2> <h3 id="常见请求头"><a href="#常见请求头" class="header-anchor">#</a> 常见请求头</h3> <img src="/blog/front-end-note/网络基础/请求头.webp">
+### 常见响应头
+<img src="/blog/front-end-note/网络基础/响应头.webp">
+## 4、HTTP状态码
+- 1xx: 表示目前是协议处理的中间状态，还需要后续操作。
+- 2xx: 表示成功状态。
+- 3xx: 重定向状态，资源位置发生变动，需要重新请求。
+- 4xx: 请求报文有误。
+- 5xx: 服务器端发生错误。
+<details><summary></summary> <img src="/blog/front-end-note/网络基础/状态码.jpg"></details> <h3 id="_1xx"><a href="#_1xx" class="header-anchor">#</a> 1xx</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">100</span> <span class="token comment">//继续  请求者应当继续提出请求。服务器返回此代码表示已收到请求的第一部分，正在等待其余部分。</span>
+<span class="token number">101</span> <span class="token comment">//切换协议  请求者已要求服务器切换协议，服务器已确认并准备切换。</span>
+</code></pre></div><h3 id="_2xx"><a href="#_2xx" class="header-anchor">#</a> 2xx</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">200</span> <span class="token comment">//成功  服务器已经成功处理了请求。</span>
+<span class="token number">204</span> <span class="token comment">//无内容  服务器成功处理了请求，但没有返回任何内容（响应报文中无body）</span>
+<span class="token number">206</span> <span class="token comment">//部分内容  服务器成功处理了部分GET请求</span>
+</code></pre></div><h3 id="_3xx"><a href="#_3xx" class="header-anchor">#</a> 3xx</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">301</span> <span class="token comment">//永久重定向 请求的网页已永久移动到新位置。浏览器跳转到新地址并做缓存优化，未来访问时自动访问重定向后的地址。</span>
+<span class="token number">302</span> <span class="token comment">//临时重定向  浏览器并不会做缓存优化。</span>
+<span class="token number">304</span> <span class="token comment">//未修改  自动上次请求后，请求的网页未修改过。服务器返回此响应，不会返回网页的内容。（协商缓存命中时）</span>
+</code></pre></div><h3 id="_4xx"><a href="#_4xx" class="header-anchor">#</a> 4xx</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">400</span> <span class="token comment">//错误请求  服务器不理解请求的语法</span>
+<span class="token number">401</span> <span class="token comment">//未授权  请求要求身份验证。对于需要登录的网页，服务器可能返回此响应</span>
+<span class="token number">403</span> <span class="token comment">//禁止  服务器禁止访问</span>
+<span class="token number">404</span> <span class="token comment">//未找到  服务器找不到请求的资源</span>
+<span class="token number">405</span> <span class="token comment">//方法禁用  禁用请求中指定的方法</span>
+</code></pre></div><h3 id="_5xx"><a href="#_5xx" class="header-anchor">#</a> 5xx</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">500</span> <span class="token comment">//服务器内部错误  服务器遇到错误，无法完成请求</span>
+<span class="token number">501</span> <span class="token comment">//尚未实施  服务器不具备完成请求的功能。例如服务器无法识别请求方法</span>
+<span class="token number">502</span> <span class="token comment">//错误网关  服务器作为网关或代理，从上游服务器无法收到无效响应（服务器自身正常但访问时出错）</span>
+<span class="token number">503</span> <span class="token comment">//服务器不可用  服务器目前无法使用（由于超载或者停机维护）。通常，这只是暂时状态</span>
+<span class="token number">504</span> <span class="token comment">//网关超时  服务器作为网关代理，但是没有及时从上游服务器收到请求</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/front-end-note/base/网络基础/TCP协议.html" class="prev">
+        TCP协议
+      </a></span> <span class="next"><a href="/blog/front-end-note/base/网络基础/HTTPS.html">
+        HTTPS
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/front-end-note/assets/js/app.ded6d208.js" defer></script><script src="/blog/front-end-note/assets/js/2.3d6dae29.js" defer></script><script src="/blog/front-end-note/assets/js/34.1df9b947.js" defer></script>
+  </body>
+</html>

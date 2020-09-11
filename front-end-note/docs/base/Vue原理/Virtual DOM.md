@@ -37,7 +37,7 @@ Vue 响应式系统中当依赖项被修改，触发 setter 后，会通知 watc
 diff 算法是 patch 的核心，用来对比得出两个 VNode 对象之间的差异。  
 对于两个 Vnode 对象，diff 算法只会对其同层节点进行比较，是一种较为高效的比较方式。
 
-![Image text](/Vue原理/diff.webp)
+<img :src="$withBase('/Vue原理/diff.webp')">
 
 diff 算法中，若 key、 tag、 isComment（是否为注释节点）、 data 同时定义（或不定义），同时满足当标签类型为 input 的时候 type 相同时，被认为相同节点。
 

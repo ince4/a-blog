@@ -4,7 +4,7 @@
 
 <details style="margin-top:20px">
   <summary style="color: #494949">图示</summary>
-  <img src="/Vue原理/lifecycle.png" width="600px">
+  <img :src="$withBase('/Vue原理/lifecycle.png')" width="600px">
 </details>
 
 ### beforeCreate
