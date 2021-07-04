@@ -83,6 +83,9 @@ module.exports = {
 					children: [
 						'其他/Webpack基础',
 						'其他/TypeScript基础',
+						'其他/Fetch与XMLHttpRequest',
+						'其他/CSS-BEM命名规范',
+						'其他/全局执行上下文出栈时机',
 					]
 				},
 				// {
@@ -94,7 +97,7 @@ module.exports = {
 				// 	]
 				// },
 			],
-			'/logs/': [
+			'/code/': [
 				['', 'About'],
 				['Echarts相关', 'Echarts相关'],
 				['全局执行上下文出栈时机', '全局执行上下文出栈时机'],
