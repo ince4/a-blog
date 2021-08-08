@@ -6,8 +6,8 @@ module.exports = {
 		logo: '/animal_chara_computer_azarashi.png',
 		nav: [
 			{ text: '主页', link: '/' },
-			{ text: '基础', link: '/base/JS基础/数据类型' },
-			{ text: '实习日记', link: '/logs/' },
+			{ text: '基础知识', link: '/base/JS基础/数据类型' },
+			{ text: '代码原理', link: '/code/' },
 			{ text: 'External', link: 'http://www.ronn.top/blog/nihonngo/' },
 		],
 		sidebar: {
