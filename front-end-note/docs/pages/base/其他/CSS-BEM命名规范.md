@@ -77,7 +77,7 @@ Block 中的后代元素，一个块中元素的类名必须用祖先级块的�
 
 ---
 
-深入学习：
+相关链接：
 
 [getbem.com/](http://getbem.com/)  
 [CSS BEM 书写规范](https://github.com/Tencent/tmt-workflow/wiki/%E2%92%9B-%5B%E8%A7%84%E8%8C%83%5D--CSS-BEM-%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83)  

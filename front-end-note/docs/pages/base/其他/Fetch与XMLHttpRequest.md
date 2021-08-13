@@ -36,7 +36,7 @@ Fetch Api 相较原生 XMLHttpRequest 使用更方便、简洁，但比起后者
 Fetch 目前还不够成熟，但日常使用中除非应用有特殊需求，也是完全可以使用的。而对于规模和复杂度达到一定程度的项目来说还是应该使用 axios 等经过封装过的成熟 Ajax 库。
 
 ---
-深入学习：
+相关链接：
 
 [使用 Fetch-MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)  
 [【译】XMLHttpRequest和Fetch, 谁最适合AJAX？](https://www.cnblogs.com/hanksyao/p/12089105.html#h3-2)  
