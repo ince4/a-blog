@@ -60,6 +60,7 @@ module.exports = {
             "JS实践/图片懒加载",
             "JS实践/单例模式",
             "JS实践/观察者模式",
+            "JS实践/实现"
           ],
         },
         {
@@ -88,6 +89,13 @@ module.exports = {
             "Vue原理/EventBus",
             "Vue原理/异步更新",
             "Vue原理/Vue3.0",
+          ],
+        },
+        {
+          title: "HTML+CSS",
+          collapsable: true,
+          children: [
+            "HTML+CSS/bfc",
           ],
         },
         {

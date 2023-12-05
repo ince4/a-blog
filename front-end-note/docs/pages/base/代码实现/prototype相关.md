@@ -21,7 +21,7 @@ function _create(prototypeOfCon) {
 }
 
 function a() {
-  this.sb = "ym";
+  this.s = "1";
 }
 let b = createNew(a);
 let c = _create(a.prototype);
@@ -70,14 +70,18 @@ Function.prototype.$apply = function (target, arg) {
 };
 
 // bind
-Function.prototype.$bind = function (context, ...args) {
-  const fn = this;
-  const bindFn = function (...newFnArgs) {
-    return fn.call(this instanceof bindFn ? this : context, ...args, ...newFnArgs);
-  };
-  bindFn.prototype = Object.create(fn.prototype);
-  return bindFn;
-};
+Function.prototype.myBind = function(context, ...args) {
+	const fn = this
+	const bindFn = function (...newFnArgs) {
+	    return fn.call(
+			// 当返回的绑定函数作为构造函数被new调用，绑定的上下文指向实例对象
+	        this instanceof bindFn ? this : context,
+	        ...args, ...newFnArgs
+	    )
+	}
+	bindFn.prototype = Object.create(fn.prototype)
+	return bindFn
+}
 let str = "abc";
 var r = Array.prototype.slice.$apply(str);
 console.log(r);
