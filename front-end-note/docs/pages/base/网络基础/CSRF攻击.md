@@ -25,8 +25,9 @@ SameSite 属性可以选择以下三个值之一
 但 Origin 和 Referer 值可以被修改，可靠性不高。
 
 ### CSRF Token
-浏览器向服务器发送请求时，服务器生成一个字符串并将其植入到返回的页面中。  
+浏览器向服务器发送请求时，服务器生成一个字符串并将其植入到返回的页面中（放在head区域或者表单里面）。  
 浏览器向服务端发送请求时必须带上这个字符串，然后服务器来验证是否合法。
+token进行了加密（有日期等参数，其他人无法知道具体参数）
 
 > 对于 GET 请求可以将 token 值作为请求的 url 参数  
 > 对于 POST 请求可以使用 &lt;input type="hidden" name="csrftoken" value="tokenvalue"&gt;

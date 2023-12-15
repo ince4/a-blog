@@ -32,8 +32,8 @@
 // })
 
 module.exports = {
-  title: "ronn的前端笔记",
-  description: "前端学习过程中积累、整理的个人笔记",
+  title: "ronn前端笔记",
+  description: "积累、整理的部分前端知识点个人笔记",
   base: "/blog/front-end-note/",
   themeConfig: {
     logo: "/animal_chara_computer_azarashi.png",
@@ -48,7 +48,7 @@ module.exports = {
         {
           title: "JS基础",
           collapsable: true,
-          children: ["JS基础/数据类型", "JS基础/执行上下文和执行栈", "JS基础/闭包", "JS基础/原型链", "JS基础/异步编程"],
+          children: ["JS基础/数据类型", "JS基础/执行上下文和执行栈", "JS基础/闭包", "JS基础/原型链", "JS基础/异步编程", "JS基础/es6"],
         },
         {
           title: "JS实践",

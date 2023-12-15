@@ -35,11 +35,12 @@ Vue 响应式系统中当依赖项被修改，触发 setter 后，会通知 watc
 
 ### diff算法
 diff 算法是 patch 的核心，用来对比得出两个 VNode 对象之间的差异。  
-对于两个 Vnode 对象，diff 算法只会对其同层节点进行比较，是一种较为高效的比较方式。
+
+>- 1、只比较同一层级 不跨级比较
+>- 2、tag不同直接删掉重建， 不深度比较
+>- 3、tag和key都相同则认为是相同节点
 
 <img :src="$withBase('/Vue原理/diff.webp')">
-
-diff 算法中，若 key、 tag、 isComment（是否为注释节点）、 data 同时定义（或不定义），同时满足当标签类型为 input 的时候 type 相同时，被认为相同节点。
 
 ### v-for中不推荐index作为key值的原因
 diff 算法中 key 的值是判断两个节点是否相同的依据之一。将 index 作为 key 值不能确保其唯一性,存在渲染效率降低或 bug 产生的风险。
