@@ -85,7 +85,7 @@ module.exports = {
           children: [
             "Vue原理/Vue基础",
             "Vue原理/响应式系统",
-            "Vue原理/Virtual DOM",
+            "Vue原理/Virtual DOM和Diff算法",
             "Vue原理/EventBus",
             "Vue原理/异步更新",
             "Vue原理/Vue3.0",

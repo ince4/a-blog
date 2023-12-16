@@ -1,43 +1,33 @@
 # Vue3.0
 
-## 1、Vite构建项目
-``` shell
-$ npm init vite-app <project-name>
-$ cd <project-name>
-$ npm install
-$ npm run dev
+## 1、响应式
+Vue2.0 的响应式系统是基于 Object.defineProperty 实现的代理
+>- 监听不到对象属性的增删、数组元素和长度的变化（vue.set、vue.delete、数组原型push ...）
+>- Vue 实例初始化的时候对data进行深度监听 性能开销大
 
-# 章节用例项目的依赖版本
-# "@vue/composition-api": "^1.0.0-beta.6",
-# "vue": "^3.0.0-rc.1"
+Vue3.0 采用了 ES6 的 Proxy 来代替 Object.defineProperty
+>- 可以做到监听对象属性的增删和数组元素和长度的修改
+>- 不用初始化的时候遍历data进行响应式初始化（因为proxy可以直接监听外层对象，而不是key），而是会在用到的时候才去监听（触发 getter）。
+>- 还可以监听 Map、Set、WeakSet、WeakMap 等数据结构
+
+```javascript
+function reactive (target = {}) {
+	if (typeof target !== 'object' || target == null) {
+		return target
+	}
+
+	const proxyConfig = {}
+
+	const observed = new Proxy(target, proxyConfig)
+	return observed
+}
 ```
 
-> Vite 是一个由原生 ESM 驱动的 Web 开发构建工具。在开发环境下基于浏览器原生 ES imports 开发，在生产环境下基于 Rollup 打包。  
-> 它主要具有以下特点：
->- 快速的冷启动
->- 即时的模块热更新
->- 真正的按需编译
 
 ## 2、Composition API
-Vue3.0 中不总是需要通过选项来组织代码，而是可以将代码组织为处理特定功能的函数。使得在组件之间甚至组件之外逻辑的提取和重用变得更加简单。
+将某个逻辑关注点相关的代码全都放在一个函数里，这样当需要修改一个功能时，就不再需要在文件中跳来跳去
 
 ```vue
-Vue2.0 中配置组件
-<script>
-export default {
-	name: 'App',
-	data: {
-	    // ...
-	},
-	computed: {
-	    // ...
-	},
-	methods: {
-	    // ...
-	}
-}
-</script>
-
 Vue3.0 中通过 Composition API 配置组件
 <template>
 	<button @click="handleClick"> {{ state.count }} </button>
@@ -126,23 +116,6 @@ export default {
 	- destroyed -> onUnmounted
 	- errorCaptured -> onErrorCaptured
 
-## 3、响应式
-Vue2.0 的响应式系统是基于 Object.defineProperty 实现的代理，能够监听数据对象的变化，但是监听不到对象属性的增删、数组元素和长度的变化。同时会在 Vue 实例初始化的时候把所有的 Observer 都建立好并进行深度监听，才能观察到数据对象属性的变化。
-
-Vue3.0 采用了 ES6 的 Proxy 来代替 Object.defineProperty，性能更好，可以做到监听对象属性的增删和数组元素和长度的修改，还可以监听 Map、Set、WeakSet、WeakMap 等数据结构。同时还实现了惰性的监听，不会在初始化的时候创建所有的 Observer，而是会在用到的时候才去监听（触发 getter）。
-
-```javascript
-function reactive (target = {}) {
-	if (typeof target !== 'object' || target == null) {
-		return target
-	}
-
-	const proxyConfig = {}
-
-	const observed = new Proxy(target, proxyConfig)
-	return observed
-}
-```
 
 ## 4、其他新变化
 - 切换到TypeScript
