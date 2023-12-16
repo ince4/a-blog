@@ -41,8 +41,7 @@ diff 算法是 patch 的核心，用来对比得出两个 VNode 对象之间的�
 >- 3、tag、key、isComment、data是否定义 都相同则认为是相同节点
 
 两者都有子节点会触发updateChildren,vNode和oldVnode的children索引从两端到中间移动开始进行比较。如果没有匹配的会进行oldChildren遍历与start比较。如果仍没有成功的会插入start到dom中对应oldStart位置
-<img :src="$withBa
-se('/Vue原理/diff.webp')">
+<img :src="$withBase('/Vue原理/diff.webp')">
 
 ### v-for中不推荐index作为key值的原因
 diff 算法中 key 的值是判断两个节点是否相同的依据之一。将 index 作为 key 值不能确保其唯一性,存在渲染效率降低或 bug 产生的风险。
