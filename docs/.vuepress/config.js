@@ -34,7 +34,7 @@
 module.exports = {
   title: "ronn前端笔记",
   description: "积累、整理的部分前端知识点个人笔记",
-  // base: "/blog/front-end-note/",
+  base: "/ronn-blog",
   themeConfig: {
     logo: "/animal_chara_computer_azarashi.png",
     nav: [
