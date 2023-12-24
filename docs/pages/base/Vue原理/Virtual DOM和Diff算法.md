@@ -34,13 +34,17 @@ Vue 响应式系统中当依赖项被修改，触发 setter 后，会通知 watc
 上述对比新旧 Vnode 将差异更新到视图上的过程就是 patch 的过程。
 
 ### diff算法
-diff 算法是 patch 的核心，用来对比得出两个 VNode 对象之间的差异。  
+diff 算法是 patch 的核心，用来对比得出两个 VNode 对象之间的差异。(传统两棵树做diff复杂度O(3))
 
->- 1、只比较同一层级 不跨级比较
+>- 1、只比较同一层级 不跨级比较。降低了复杂度
 >- 2、tag不同直接删掉重建， 不深度比较
 >- 3、tag、key、isComment、data是否定义 都相同则认为是相同节点
 
-两者都有子节点会触发updateChildren,vNode和oldVnode的children索引从两端到中间移动开始进行比较。如果没有匹配的会进行oldChildren遍历与start比较。如果仍没有成功的会插入start到dom中对应oldStart位置
+两者都有子节点会触发updateChildren,
+>- vue2 双端比较
+>- vue3 最长递增子序列
+>- react仅右移
+vNode和oldVnode的children索引从两端到中间移动开始进行比较。如果没有匹配到会进行oldChildren遍历与start比较。如果仍没有成功的会插入start到dom中对应oldStart位置
 <img :src="$withBase('/Vue原理/diff.webp')">
 
 ### v-for中不推荐index作为key值的原因

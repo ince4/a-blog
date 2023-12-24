@@ -104,7 +104,5 @@ module.exports = {
 - 使用 Tree-shaking 消除未使用模块
 - ...
 
----
-相关链接：
-
-[Webpack 中文文档](https://www.webpackjs.com/concepts/)  
+## 4、HotModuleReplacement
+启动webpack 启动本地server，浏览器可以请求静态资源，启动websocket服务，在监听到文件修改后websocket告诉客户端
