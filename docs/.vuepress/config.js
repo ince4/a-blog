@@ -48,7 +48,7 @@ module.exports = {
         {
           title: "JS基础",
           collapsable: true,
-          children: ["JS基础/数据类型", "JS基础/执行上下文和执行栈", "JS基础/闭包", "JS基础/原型链", "JS基础/异步编程", "JS基础/es6"],
+          children: ["JS基础/数据类型", "JS基础/执行上下文和执行栈", "JS基础/闭包", "JS基础/原型链", "JS基础/异步编程", "JS基础/es6",  "JS基础/垃圾回收和内存泄漏"],
         },
         {
           title: "JS实践",
@@ -77,6 +77,7 @@ module.exports = {
             "网络基础/HTTPS",
             "网络基础/XSS攻击",
             "网络基础/CSRF攻击",
+            "网络基础/WebSocket",
           ],
         },
         {
